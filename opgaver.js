@@ -112,5 +112,21 @@ console.log(filterOdd([10, 23, 37, 46, 52]));
 console.log("");
 console.log("Opgave 5");
 function reverseString(input) {
-    
+    let reverseinput = '';
+    for (let i = input.length-1; i >= 0 ; i--) {
+        reverseinput += input[i];
+    }
+    return reverseinput;
 }
+console.log(reverseString('JavaScript'))
+console.log("");
+console.log("Opgave 6");
+
+function flatten(input) {
+   return input.flat(1);
+}
+
+console.log(flatten([[1, 2], [3, 4], [5]]))
+
+console.log('ser lige om jeg kan flatten den uden .flat funtionen')
+
