@@ -5,13 +5,31 @@
     <title>jsOpgaver</title>
 </head>
 <body>
+<h1>Opgave 7</h1>
 <p id="text">Dette er den oprindelige tekst.</p>
 <button id="changeTextButton">Skift tekst</button>
+<br>
 
+<h1>Opgave 8</h1>
 <p>Antal klik: <span id="clickCount">0</span></p>
 <button id="clickButton">Klik mig</button>
+<br>
+
+<h1>Opgave 9</h1>
+<input type="text" id="itemInput" placeholder="Skriv noget...">
+<button id="addItemButton">Tilføj</button>
+
+<ul id="itemList"></ul>
 
 <script>
+    const liInput = document.querySelector('#itemInput');
+    const addButton = document.querySelector('#addItemButton');
+    const liContainer = document.querySelector('#itemList');
+
+    addButton.addEventListener('click', () =>
+        const listitem = liContainer.appendChild(document.createElement("li"))
+        listitem.innerHTML
+    );
 </script>
 <script type="text/javascript" src="opgaver.js"></script>
 </body>
