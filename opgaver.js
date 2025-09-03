@@ -128,5 +128,42 @@ function flatten(input) {
 
 console.log(flatten([[1, 2], [3, 4], [5]]))
 
-console.log('ser lige om jeg kan flatten den uden .flat funtionen')
+console.log('ser lige om jeg kan flatten den uden .flat functionen')
+
+function flattenFor(input) {
+    let comboarray = [];
+    for (let i = 0; i < input.length; i++) {
+        for (let j = 0; j < input[i].length; j++) {
+            comboarray.push(input[i][j]); //Spurgte chat om denne, for jeg kunne ikke finde ud af hvorfor input[j] ikke virkede.
+        }
+
+    }
+    return comboarray
+}
+console.log(flattenFor([[1, 2], [3, 4], [5]]))
+
+console.log("");
+console.log("Opgave 7");
+
+const changetext = document.querySelector('#changeTextButton');
+const text = document.querySelector('#text');
+
+changetext.addEventListener('click', () =>
+    text.innerHTML = "Dette er en helt ny og mega sej tekst!"
+);
+
+console.log('se index fil');
+console.log("");
+console.log("Opgave 8");
+
+const countbutton = document.querySelector('#clickButton');
+const counter = document.querySelector('#clickCount');
+
+countbutton.addEventListener('click', () =>
+    counter.innerHTML ++
+);
+
+console.log('se index fil');
+console.log("");
+console.log("Opgave 9");
 
